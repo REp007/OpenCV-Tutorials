@@ -25,6 +25,8 @@ import numpy as np
     * Display an image
     * Read a Video
     * Read a webcam
+    * save an image
+    
 
 [Chapter 1](Chapter1.py)
 
