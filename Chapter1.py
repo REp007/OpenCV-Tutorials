@@ -42,3 +42,6 @@ while True:
 cv2.destroyAllWindows()
 
 
+# Save the image
+
+cv2.imwrite('savedImage.jpg', img)  # (name, image)
