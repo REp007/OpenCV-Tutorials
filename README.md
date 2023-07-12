@@ -46,6 +46,12 @@ import numpy as np
     * Rotation image
 [Chapter 3](Chapter3.py)
 
+## Chapter 4: Shapes and Texts
+    * Line
+    * Rectangle
+    * Circle
+    * Text
+
 
 
 
