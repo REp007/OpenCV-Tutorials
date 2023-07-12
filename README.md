@@ -51,7 +51,19 @@ import numpy as np
     * Rectangle
     * Circle
     * Text
+[Chapter 4](Chapter4.py)
 
+## Chapter5 : WARP PRESPECTIVE
+    * Warp Perspective
+
+[Chapter 5](Chapter5.py)
+
+## Chapter6 : Joining Images
+    * Joining Images
+    * Horizontal Stacking
+    * Vertical Stacking
+
+[Chapter 6](Chapter6.py)
 
 
 
