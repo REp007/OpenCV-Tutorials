@@ -65,6 +65,13 @@ import numpy as np
 
 [Chapter 6](Chapter6.py)
 
+## Chapter7: Color Detection
+    * Color Detection
+    * Trackbars
+    * Color Detection using Trackbars
+
+[Chapter 7](Chapter7.py)
+
 
 
 made by ___Amrani Youssef___  [GitHub](https://github.com/REp007)
