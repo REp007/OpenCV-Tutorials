@@ -20,6 +20,11 @@ while True:
     # Detect faces
     faces = face_cascade.detectMultiScale(gray_img, 1)
 
+    # ScaleFactor it will scale the image by 1.05
+    # minNeighbors how many neighbors each rectangle should have to retain it
+    # minSize minimum rectangle size to be considered a face
+    # maxSize maximum rectangle size to be considered a face
+
     cv2.imshow('frame', frame)
 
 
