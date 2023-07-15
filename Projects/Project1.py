@@ -1,47 +1,50 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Sep  9 15:08:04 2019
-"""
-
-
-# Colors and Color Detection
-# Detect blue in video
-
 import cv2
-import numpy as np
 
+'''
+Face and Eye Detection
+'''
 
-# img = cv2.imread('..\src\colorful.jpg', 0)
 cap = cv2.VideoCapture(0)
+
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
 
 while True:
     ret, frame = cap.read()
 
-    width= int(cap.get(3))
-    height= int(cap.get(4))
-    
+    # Change to grayscale
+    gray_img = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+    # Detect faces
+    faces = face_cascade.detectMultiScale(gray_img, scaleFactor=1.3, minNeighbors=5)
 
-    # hsv hue sat value
-    # whats this do if blue is 110-130 will it detect blue?
-    # if its blue will keep it if not will make it black
-    lower_blue = np.array([110, 50,50])
-    upper_blue = np.array([130, 255, 255])
+    # Check if any face is detected
+    if len(faces) > 0:
+        text = "Face Detected"
+    else:
+        text = "No Face Detected"
 
-    mask = cv2.inRange(hsv, lower_blue, upper_blue)
+    for (x, y, w, h) in faces:
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 5)
 
-    result = cv2.bitwise_and(frame,frame, mask=mask)
+        roi_gray = gray_img[y:y + h, x:x + w]
+        roi_color = frame[y:y + h, x:x + w]
+        eyes = eye_cascade.detectMultiScale(roi_gray, scaleFactor=1.3, minNeighbors=5)
 
-    cv2.imshow('frame', result)
+        if len(eyes) >= 2 and len(faces) > 0:
+            text = "Focused"
+        else:
+            text = "Not Focused"
 
-    
+        for (ex, ey, ew, eh) in eyes:
+            cv2.rectangle(roi_color, (ex, ey), (ex + ew, ey + eh), (0, 255, 0), 5)
+
+    # Insert text overlay at the top of the webcam feed
+    cv2.putText(frame, text, (20, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2, cv2.LINE_AA)
+
+    cv2.imshow('frame', frame)
+
     if cv2.waitKey(1) == ord('q'):
         break
 
-
-
-
-
-
+cv2.destroyAllWindows()
