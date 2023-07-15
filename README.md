@@ -101,4 +101,4 @@ Go to your terminal and type this command
 ### Projects:
 
 1. Face and Eye Detection 
-[Project 1](Project1.py)
+[Project 1](/Projects/Project1.py)
