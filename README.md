@@ -98,11 +98,7 @@ Go to your terminal and type this command
 
 
 
-#### SHOLUD KNOW
+### Projects:
 
-1. RGB : Red Green Blue
-2. BGR : Blue Green Red
-3. HSV : Hue Saturation Value
-4. HSV : Hue  Saturation and lightness/Brightness
-
-made by ___Amrani Youssef___  [GitHub](https://github.com/REp007)
+1. Face and Eye Detection 
+[Project 1](Project1.py)
