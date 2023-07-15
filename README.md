@@ -34,6 +34,13 @@ Go to your terminal and type this command
     git clone 'url up'
 ```
 
+**OU**
+
+```bash
+    pip i -r requirements.txt
+```
+
+
 <hr>
 
 
