@@ -50,6 +50,6 @@ cv2.imshow('Image', img)
 
 
 # you can find the image in the Resources folder
-cv2.imwrite('Resources/Chapter4/line.jpg', img)
+cv2.imwrite('Result/Chapter4/line.jpg', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()

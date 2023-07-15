@@ -28,9 +28,9 @@ matrix = cv2.getPerspectiveTransform(pts1,pts2)
 imgOutput = cv2.warpPerspective(img, matrix, (width, height))
 
 cv2.imshow('Original', img)
-cv2.imwrite('Resources/Chapter5/OriginalImg.png', img=img)
+cv2.imwrite('Result/Chapter5/OriginalImg.png', img=img)
 cv2.imshow('img Output', imgOutput)
-cv2.imwrite('Resources/Chapter5/ResultImg.png', imgOutput)
+cv2.imwrite('Result/Chapter5/ResultImg.png', imgOutput)
 
 
 

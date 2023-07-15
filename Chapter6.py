@@ -20,7 +20,7 @@ cv2.imwrite('Resources/Chapter6/hor.jpg', hor)
 ver = np.vstack((img,img))
 
 cv2.imshow('Vertical', ver)
-cv2.imwrite('Resources/Chapter6/ver.jpg', ver)
+cv2.imwrite('Result/Chapter6/ver.jpg', ver)
 
 
 cv2.waitKey(0)

@@ -19,6 +19,23 @@ import numpy as np
 ```
 
 <hr>
+<h3>For install this Tutorial</h3>
+Go to your terminal and type this command
+
+```cmd
+    cd Desktop
+
+    mkdir OpenCV-Tutorials
+
+    cd OpenCV-Tutorials
+```
+
+```bash
+    git clone 'url up'
+```
+
+<hr>
+
 
 ## Chapter 1: Getting Started with Images
     * Read an image
@@ -72,6 +89,20 @@ import numpy as np
 
 [Chapter 7](Chapter7.py)
 
+## Chapter8: CONTOURS / SHAPE DETECTION
+    * Contours
+    * Shape Detection
+    * Stacking Images and Contour Detection
+[Chapter 8](Chapter8.py)
 
+
+
+
+#### SHOLUD KNOW
+
+1. RGB : Red Green Blue
+2. BGR : Blue Green Red
+3. HSV : Hue Saturation Value
+4. HSV : Hue  Saturation and lightness/Brightness
 
 made by ___Amrani Youssef___  [GitHub](https://github.com/REp007)
