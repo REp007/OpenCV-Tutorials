@@ -3,12 +3,17 @@
 <img src='src/Computervision_banner.webp'>
 
 
-This all Chapter to leran opencv with python
+This all Chapter to learn opencv with python
 [link Video YT](https://youtu.be/WQeoO7MI0Bs)
 
 for install opencv with python
 ```bash
 pip install opencv-python
+```
+**OU**
+
+```bash
+    pip i -r requirements.txt
 ```
 
 and import opencv in python
@@ -32,12 +37,6 @@ Go to your terminal and type this command
 
 ```bash
     git clone 'url up'
-```
-
-**OU**
-
-```bash
-    pip i -r requirements.txt
 ```
 
 
@@ -109,9 +108,11 @@ Go to your terminal and type this command
 
 1. Face and Eye Detection 
 [Project 1](/Projects/Project1.py)
-
 2. Number Plate Detection
 [Project 2](/Projects/Project2.py)
-<img src='src\test3.PNG'>
 
-<img src='Result\7.png'>
+<img src = 'src\test3.PNG' width='300px'>
+
+
+
+<img src = 'Result\7.PNG' width='300px'>
