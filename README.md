@@ -109,3 +109,9 @@ Go to your terminal and type this command
 
 1. Face and Eye Detection 
 [Project 1](/Projects/Project1.py)
+
+2. Number Plate Detection
+[Project 2](/Projects/Project2.py)
+<img src='src\test3.PNG'>
+
+<img src='Result\7.png'>
