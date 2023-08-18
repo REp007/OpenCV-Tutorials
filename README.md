@@ -6,23 +6,6 @@
 This all Chapter to learn opencv with python
 [link Video YT](https://youtu.be/WQeoO7MI0Bs)
 
-for install opencv with python
-```bash
-pip install opencv-python
-```
-**OU**
-
-```bash
-    pip i -r requirements.txt
-```
-
-and import opencv in python
-
-```python
-import cv2
-import numpy as np
-```
-
 <hr>
 <h3>For install this Tutorial</h3>
 Go to your terminal and type this command
@@ -39,6 +22,24 @@ Go to your terminal and type this command
     git clone 'url up'
 ```
 
+
+
+for install opencv with python
+```bash
+pip install opencv-python
+```
+**OU**
+
+```bash
+    pip i -r requirements.txt
+```
+
+and import opencv in python
+
+```python
+import cv2
+import numpy as np
+```
 
 <hr>
 
